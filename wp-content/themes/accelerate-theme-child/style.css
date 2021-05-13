@@ -2,7 +2,7 @@
 Theme Name:   Accelerate Theme Child
 Theme URI:    http://example.com/accelerate-theme-child/
 Description:  Accelerate Child Theme - Accelerate
-Author:   	Your Name!
+Author:   	Kelly Bosman
 Author URI:   http://example.com
 Template: 	accelerate-theme
 Version:      2.0.0
@@ -12,6 +12,7 @@ Text Domain:  accelerate-theme-child
 
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+    margin: 0;
     text-align: center;
 }
 
@@ -47,14 +48,117 @@ Text Domain:  accelerate-theme-child
 	text-transform: uppercase;
 }
 
+
+/* Featured Work on Homepage */
+
+.featured-work {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.homepage-featured-work {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin: 2em 0 .5em;
+}
+
+.individual-featured-work {
+	list-style: none;
+	width: 90%;
+}
+
+.featured-work h3 {
+	font-family: 'Open Sans' , sans-serif;
+	font-size: 1em;
+	font-weight: normal;
+	text-align: center;
+	width: 90%;
+}
+
+.featured-work h4 {
+	font-family: 'Montserrat' , sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+}
+
 /* Case Studies */
 
-aside .case-study-sidebar {
+aside.case-study-sidebar {
 	float: left;
-	width: 300px;
+	height: auto;
+	margin: 2em;
+	width: 35%;
 }
 
-div .case-study-images {
-	float: left;
-	width: 600px;
+aside.case-study-sidebar h2 {
+	font-family: 'Open Sans' , sans-serif , semi-bold;
+	font-size: 1.5em;
+	margin: 0;
 }
+
+aside.case-study-sidebar h5 {
+	color: #878787;
+	font-size: 1em;
+	font-weight: 400;
+	font-family: 'Open Sans' , sans-serif;
+	text-transform: capitalize;
+	margin: 0;
+}
+
+aside.case-study-sidebar h4 {
+	font-size: 1em;
+	font-weight: 500;
+}
+
+div.case-study-images {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	margin-right: 0;
+}
+
+div.case-study-images img {
+	width: 100%;
+	height: auto;
+	padding: 1em 2em;
+}
+
+.case-study {
+	padding: 1em 1em;
+}
+
+.site-content-sidebar {
+	margin-right: 0;
+}
+
+/* Case Studies */
+
+.case-study-sidebar
+
+/* Media Queries */
+@media (min-width: 768px) {
+	.homepage-featured-work {
+		column-width: 250px;
+	}
+
+	div.case-study-images {
+	display: flex;
+	flex-direction: column wrap;
+	justify-content: flex-start;
+	}
+}
+
+
+
+
+
+
+
+
+
+
