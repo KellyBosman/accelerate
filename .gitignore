@@ -4,3 +4,5 @@ wp-config.php
 .htaccess
 *.jpg
 *.png
+wp-content/uploads
+wp-content/mu-plugins
