@@ -1,8 +1,0 @@
-# Ignore the following
-.DS_Store
-wp-config.php
-.htaccess
-*.jpg
-*.png
-wp-content/uploads
-wp-content/mu-plugins

@@ -140,6 +140,30 @@ div.case-study-images img {
 
 .case-study-sidebar
 
+/* Footer - ADDED THIS BUT DOESN'T SEEM TO WORK*/
+
+.site-footer {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-top: 0;
+	padding-bottom: 2em;
+}
+
+.site-footer .social-media-menu li {
+	list-style-type: none;
+	display: inline-flex;
+	padding: 2px;
+}
+
+div.menu-social-media-nav-container {
+	display: flex;
+	justify-content: flex-end;
+}
+
+div.site-description {
+}
+
 /* Media Queries */
 @media (min-width: 768px) {
 	.homepage-featured-work {
